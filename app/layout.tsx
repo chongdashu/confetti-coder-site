@@ -15,7 +15,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Confetti Coder - Add a Sprinkle of Joy to Your Coding",
-  description: "Confetti Coder is a delightful VS Code extension that adds customizable confetti effects to your coding sessions, making development more enjoyable without impacting performance.",
+  description: "Confetti Coder is a delightful VS Code extension that adds customizable confetti effects to your coding sessions, making development more enjoyable.",
 };
 
 export default function RootLayout({
