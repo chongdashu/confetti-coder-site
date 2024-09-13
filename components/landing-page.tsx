@@ -49,7 +49,7 @@ const VideoSection = () => {
           </button>
         </div>
         <div className="flex justify-between items-center mt-4">
-          <span className="text-sm text-green-400">Code Confetti in action</span>
+          <span className="text-sm text-green-400">Confetti Coder in action</span>
           <Sparkles className="h-5 w-5 text-yellow-400" />
         </div>
       </motion.div>
@@ -122,7 +122,7 @@ export function LandingPage() {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            Code Confetti
+           Confetti Coder
           </motion.h1>
           <motion.p 
             className="text-xl mb-8 text-gray-700"
@@ -152,7 +152,7 @@ export function LandingPage() {
           <div className="bg-white bg-opacity-80 p-6 rounded-lg backdrop-blur-sm border-2 border-blue-300">
             <h2 className="text-3xl font-semibold mb-4 text-blue-700">Celebrate Every Line of Code</h2>
             <p className="text-lg mb-6 text-gray-700">
-              Code Confetti is a delightful VS Code extension that adds a touch of celebration to your coding sessions. 
+              Confetti Coder is a delightful VS Code extension that adds a touch of celebration to your coding sessions. 
               Experience customizable confetti effects as you type, making your development process more enjoyable.
             </p>
             <ul className="space-y-2 text-gray-700">
@@ -191,14 +191,14 @@ export function LandingPage() {
         
         <section className="text-center bg-white bg-opacity-80 p-8 rounded-lg backdrop-blur-sm border-2 border-purple-300 mb-16">
           <h2 className="text-3xl font-semibold mb-4 text-purple-700">Ready to add some joy to your code?</h2>
-          <p className="text-xl mb-8 text-gray-700">Install Code Confetti now and transform your coding experience!</p>
+          <p className="text-xl mb-8 text-gray-700">Install Confetti Coder now and transform your coding experience!</p>
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-purple-500 to-pink-500 text-white hover:from-purple-600 hover:to-pink-600 transition-all duration-300"
             onClick={() => window.open('https://marketplace.visualstudio.com/items?itemName=chongdashu.confetti-coder', '_blank')}
           >
             <Sparkles className="mr-2 h-4 w-4" />
-            Get Code Confetti
+            Get Confetti Coder
           </Button>
         </section>
 
