@@ -24,9 +24,10 @@ export const metadata: Metadata = {
     siteName: 'Confetti Coder',
     images: [
       {
-        url: 'https://confetticoder.xyz/og-image.png', // Make sure to create this image
+        url: '/api/og',
         width: 1200,
         height: 630,
+        alt: 'Confetti Coder - Add a Sprinkle of Joy to Your Coding',
       },
     ],
     locale: 'en_US',
@@ -36,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Confetti Coder',
     description: 'Add a Sprinkle of Joy to Your Coding',
-    images: ['https://confetticoder.xyz/og-image.png'], // Same as OpenGraph image
+    images: ['/api/og'],
   },
   robots: {
     index: true,
