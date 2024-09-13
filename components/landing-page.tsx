@@ -143,7 +143,7 @@ export function LandingPage() {
               onClick={() => window.open('https://marketplace.visualstudio.com/items?itemName=chongdashu.confetti-coder', '_blank')}
             >
               <Sparkles className="mr-2 h-4 w-4" />
-              Install Extension
+              Install VSCode Extension
             </Button>
           </motion.div>
         </header>
@@ -198,7 +198,7 @@ export function LandingPage() {
             onClick={() => window.open('https://marketplace.visualstudio.com/items?itemName=chongdashu.confetti-coder', '_blank')}
           >
             <Sparkles className="mr-2 h-4 w-4" />
-            Get Confetti Coder
+            Get Confetti Coder for VS Code
           </Button>
         </section>
 
