@@ -23,6 +23,11 @@ const SocialIcon = ({ icon, href }: { icon: React.ReactNode, href: string }) => 
 
 const VideoSection = () => {
   const [isEnlarged, setIsEnlarged] = useState(false)
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
 
   return (
     <div className="relative">
@@ -32,15 +37,18 @@ const VideoSection = () => {
         transition={{ duration: 0.3 }}
       >
         <div className="relative h-64 md:h-80">
-          <video 
-            className="w-full h-full object-cover rounded"
-            src="/placeholder.mp4"
-            controls
-            loop
-            muted
-          >
-            Your browser does not support the video tag.
-          </video>
+          {isClient && (
+            <video 
+              className="w-full h-full object-contain rounded"
+              src={new URL('/app/confetti-coder.mp4', import.meta.url).href}
+              controls
+              autoPlay
+              loop
+              muted
+            >
+              Your browser does not support the video tag.
+            </video>
+          )}
           <button 
             onClick={() => setIsEnlarged(!isEnlarged)} 
             className="absolute top-2 right-2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all duration-300"
@@ -64,16 +72,18 @@ const VideoSection = () => {
             onClick={() => setIsEnlarged(false)}
           >
             <div className="relative w-11/12 h-5/6 max-w-4xl">
-              <video 
-                className="w-full h-full object-contain rounded"
-                src="/placeholder.mp4"
-                controls
-                loop
-                autoPlay
-                muted
-              >
-                Your browser does not support the video tag.
-              </video>
+              {isClient && (
+                <video 
+                  className="w-full h-full object-contain rounded"
+                  src={new URL('/app/confetti-coder.mp4', import.meta.url).href}
+                  controls
+                  loop
+                  autoPlay
+                  muted
+                >
+                  Your browser does not support the video tag.
+                </video>
+              )}
               <button 
                 onClick={(e) => { e.stopPropagation(); setIsEnlarged(false); }} 
                 className="absolute top-4 right-4 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transition-all duration-300"
@@ -99,7 +109,14 @@ export function LandingPage() {
       setConfettiPieces(50) // Reduce confetti after 5 seconds
     }, 5000)
 
-    return () => clearTimeout(timer)
+    // Add vsc-initialized class to body
+    document.body.classList.add('vsc-initialized')
+
+    return () => {
+      clearTimeout(timer)
+      // Remove vsc-initialized class from body when component unmounts
+      document.body.classList.remove('vsc-initialized')
+    }
   }, [])
 
   return (
