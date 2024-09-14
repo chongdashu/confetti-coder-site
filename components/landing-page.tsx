@@ -221,9 +221,7 @@ export function LandingPage() {
 
         <footer className="text-center py-8">
           <div className="flex justify-center space-x-6 mb-4">
-            <SocialIcon icon={<Github className="h-6 w-6" />} href="https://github.com/chongdashu" />
-            <SocialIcon icon={<Twitter className="h-6 w-6" />} href="https://twitter.com/chongdashu" />
-            <SocialIcon icon={<Linkedin className="h-6 w-6" />} href="https://linkedin.com/in/chongdashu" />
+            <SocialIcon icon={<svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>} href="https://twitter.com/chongdashu" />
           </div>
           <p className="text-gray-600">
             Made with <span className="text-red-500">&hearts;</span> by <a href="https://twitter.com/chongdashu" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:text-blue-700 transition-colors duration-300">@chongdashu</a>
