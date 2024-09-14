@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Sparkles, Code, Smile, Zap, Github, Twitter, Linkedin, Maximize2, Minimize2 } from 'lucide-react'
+import { Sparkles, Code, Smile, Zap, Maximize2, Minimize2 } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import ReactConfetti from 'react-confetti'
 import { useWindowSize } from 'react-use'
